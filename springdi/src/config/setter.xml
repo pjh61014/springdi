@@ -32,7 +32,23 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 	 	 	<property name="d" ref="dice"></property>
 	 	  
 	 	 </bean>
+	 	 <bean id= "fileoutter" class="di.setter03.FileOutputter">
 	 	 
-	 	 <bean id =""
+	 	 </bean>
+	 	 <bean id ="message" class="di.setter03.MessageBean">
+	 	 	<property name="name" value="장동건"></property>
+	 	 	<property name="greeting" value="화이팅"></property>
+	 	 	<property name="outputter" ref="fileoutter"></property>
+	 	 	 	 
+	 	 </bean>
+	 	 <bean id = "articledto" class="di.setter04.ArticleDTO">
+	 	 	
+	 	 	<property name="name"></property>
+	 	 	<property name="title"></property>
+	 	 	<property name="content"></property>
+	 	 	<property name="date"></property>
+	 	 
+	 	 </bean>
+	 	 
 	 
 	</beans>

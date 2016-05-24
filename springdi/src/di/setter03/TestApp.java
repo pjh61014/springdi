@@ -7,14 +7,14 @@ public class TestApp {
 
 	public static void main(String[] args) {
 		
-		ApplicationContext container = new ClassPathXmlApplicationContext("config/bean.xml");
+		ApplicationContext container = new ClassPathXmlApplicationContext("config/setter.xml");
 		
 		InterMessage message = (InterMessage)container.getBean("message");
 		message.sayHello();
 		
-		
+		/*
 		InterMessage message2 = (InterMessage)container.getBean("message2");
-		message2.sayHello();
+		message2.sayHello();*/
 		
 		
 	}

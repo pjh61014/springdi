@@ -4,6 +4,9 @@ public class FileOutputter implements Outputter {
 	
 	String filePath;
 
+	public FileOutputter(){
+		
+	}	
 	
 	public FileOutputter(String filePath) {
 		super();

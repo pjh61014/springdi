@@ -14,6 +14,11 @@ public class MessageBean implements InterMessage{
 		this.outputter = outputter;
 	}
 
+	
+	public MessageBean() {
+		super();
+	}
+
 
 	@Override
 	public void sayHello() {
