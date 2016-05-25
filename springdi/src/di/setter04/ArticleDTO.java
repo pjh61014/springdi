@@ -37,6 +37,13 @@ public class ArticleDTO {
 	}
 
 
+	@Override
+	public String toString() {
+		return "ArticleDTO [name=" + name + ", title=" + title + ", content="
+				+ content + ", date=" + date + "]";
+	}
+
+
 	public void setTitle(String title) {
 		this.title = title;
 	}

@@ -5,6 +5,12 @@ public class WriteArticleMgr implements IWriteArticleMgr {
 	
 	
 	
+	public WriteArticleMgr() {
+		super();
+	}
+
+
+
 	public WriteArticleMgr(IArticleDAO articleDAO) {
 		super();
 		this.articleDAO = articleDAO;
@@ -12,10 +18,24 @@ public class WriteArticleMgr implements IWriteArticleMgr {
 
 
 
+	public IArticleDAO getArticleDAO() {
+		return articleDAO;
+	}
+
+
+
+	public void setArticleDAO(IArticleDAO articleDAO) {
+		this.articleDAO = articleDAO;
+	}
+
+	
+
 	@Override
 	public void write(ArticleDTO article) {
-		// TODO Auto-generated method stub
+		System.out.println(article);
+		articleDAO.insert(article);
 		
 	}
+	
 
 }
