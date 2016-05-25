@@ -14,6 +14,7 @@ public class WriteArticleMgr implements IWriteArticleMgr {
 	public WriteArticleMgr(IArticleDAO articleDAO) {
 		super();
 		this.articleDAO = articleDAO;
+		System.out.println("WriteArticleMgr의 생성자 호출완료");
 	}
 
 
